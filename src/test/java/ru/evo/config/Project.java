@@ -1,4 +1,4 @@
-package cloud.autotests.config;
+package ru.evo.config;
 
 import org.aeonbits.owner.ConfigFactory;
 

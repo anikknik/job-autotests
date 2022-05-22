@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package ru.evo.docs;
 
 import com.codeborne.selenide.*;
 import org.openqa.selenium.Keys;

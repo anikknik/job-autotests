@@ -1,4 +1,4 @@
-package cloud.autotests.docs;
+package ru.evo.docs;
 
 import org.junit.jupiter.api.*;
 
