@@ -22,17 +22,20 @@
 ### UI
 
 :white_check_mark: Проверка успешного открытия страницы расширенного поиска
-:white_check_mark: Проверка наличия в расширенном поиске блока "Искать фильм"
-:white_check_mark: Поиск фильма по названию кириллицей
-:white_check_mark: Поиск фильма по названию латиницей
-:negative_squared_cross_mark: Поиск фильма с названием из набора букв разного регистра
-:negative_squared_cross_mark: Поиск фильма с названием из символов 
-:white_check_mark: Проверка отсутствия ошибок в консоли
-:ballot_box_with_check: Page title should have header text
 
-:white_check_mark: - позитивные кейсы
-:negative_squared_cross_mark: - негативные кейсы
-:ballot_box_with_check: - пропущенные (требуется доработка)
+:white_check_mark: Проверка наличия в расширенном поиске блока "Искать фильм"
+
+:white_check_mark: Поиск фильма по названию кириллицей
+
+:white_check_mark: Поиск фильма по названию латиницей
+
+:negative_squared_cross_mark: Поиск фильма с названием из набора букв разного регистра
+
+:negative_squared_cross_mark: Поиск фильма с названием из символов 
+
+:white_check_mark: Проверка отсутствия ошибок в консоли
+
+:ballot_box_with_check: Page title should have header text
 
 ## :computer: Технологический стек
 
