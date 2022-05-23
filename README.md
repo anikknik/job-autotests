@@ -116,7 +116,7 @@ searchpage
 
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
-  <img title="Selenoid Video" src="https://user-images.githubusercontent.com/63372457/169886331-a9092355-64da-4aef-b25d-44cab1e1053e.mp4">
+  <img title="Selenoid Video" src="images/video/test_video.gif">
 </p>
 
 :black_heart: <a target="_blank" href="https://t.me/anikknik">t.me/anikknik</a>
