@@ -2,13 +2,13 @@
 
 ## :page_with_curl:    Содержание
 
-➠ [Покрытый функционал](#globe_with_meridians-покрытый-функционал)
+➠ [Покрытый функционал](#global_func)
 
-➠ [Технологический стек](#computer-технологический-стек)
+➠ [Технологический стек](#tech_stek)
 
-➠ [Запуск тестов из терминала](#technologist-запуск-тестов-из-терминала)
+➠ [Запуск тестов из терминала](#run_tests_terminal)
 
-➠ [Удаленный запуск тестов](#удаленный-запуск-тестов)
+➠ [Удаленный запуск тестов](#run_tests_remote)
 
 ➠ [Сборка в Jenkins](#Jenkins_sborka)
 
@@ -17,7 +17,7 @@
 ➠ [Уведомления в Telegram с использованием бота](#Telegram_report)
 
 ➠ [Пример запуска теста в Selenoid](#selenoid_video)
-## <a name="globe_with_meridians-покрытый-функционал"></a>:globe_with_meridians: Покрытый функционал
+## <a name="global_func"></a>:globe_with_meridians: Покрытый функционал
 
 ### UI
 
@@ -37,7 +37,7 @@
 
 :ballot_box_with_check: Page title should have header text
 
-## :computer: Технологический стек
+## <a name="tech_stek"></a> :computer: Технологический стек
 
 <p align="center">
 <img width="6%" title="IntelliJ IDEA" src="images/sprites/Intelij_IDEA.6aca1163.svg">
@@ -52,7 +52,7 @@
 <img width="6%" title="Telegram" src="images/sprites/Telegram.06a4926c.svg">
 </p>
 
-## :technologist: Запуск тестов из терминала
+## <a name="run_tests_terminal"></a> :technologist: Запуск тестов из терминала
 
 ### Локальный запуск тестов
 
@@ -60,7 +60,7 @@
 gradle clean searchpage
 ```
 
-### Удаленный запуск тестов
+### <a name="run_tests_remote"></a> Удаленный запуск тестов
 
 ```
 clean
