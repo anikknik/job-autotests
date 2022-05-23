@@ -1,4 +1,4 @@
-# Автоматизированное тестирование сайта Wildberries
+# Пример автоматизации поисковой страницы сервиса Кинопоиск
 
 ## :page_with_curl:    Содержание
 
@@ -14,7 +14,7 @@
 
 ➠ [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
 
-➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
+➠ [Уведомления в Telegram с использованием бота](#-Репорт-в-Telegram-с-помощью-бота)
 
 ➠ [Пример запуска теста в Selenoid](#-пример-запуска-теста-в-selenoid)
 ## <a name="globe_with_meridians-покрытый-функционал"></a>:globe_with_meridians: Покрытый функционал
@@ -77,7 +77,7 @@ searchpage
 ## <img width="4%" title="Jenkins" src="images/sprites/Jenkins.e8031169.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/12-anikknik-homework13/)
 
 <p align="center">
-  <img src="images/screenshots/Jenkins.PNG">
+  <img src="images/screenshots/main_jenkins.png">
 </p>
 
 ## <img width="4%" title="Allure Report" src="images/sprites/Allure_Report.52dae7a1.png"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/12-anikknik-homework13/allure/)
@@ -100,14 +100,14 @@ searchpage
 <img title="Allure Overview Dashboard" src="images/screenshots/graphs_allure.png">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Репорт в Telegram с помощью бота
+## <img width="4%" title="Telegram" src="images/sprites/Telegram.06a4926c.svg"> Репорт в Telegram с помощью бота
 
 > После завершения сборки бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом.
 <p align="center">
 <img title="Telegram Notifications" src="images/screenshots/report_telegram.png">
 </p>
 
-## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
+## <img width="4%" title="Selenoid" src="images/sprites/Selenoid.8de18e28.svg"> Пример запуска теста в Selenoid
 
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
