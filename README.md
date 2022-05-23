@@ -21,72 +21,47 @@
 
 ### UI
 
-- [x] Проверка отсутствия ошибок в журнале консоли главной страницы
-- [x] Проверка функциональности корзины (добавление-удаление товара)
-- [x] Проверка наличия кнопки 'Работа в Wildberries'
-- [x] Проверка действия кнопки 'Продавайте на Wildberries'
-- [x] Проверка доступности чат-бота
+- [x] Проверка успешного открытия страницы расширенного поиска
+- [x] Проверка наличия в расширенном поиске блока "Искать фильм"
+- [x] Поиск фильма по названию кириллицей
+- [x] Поиск фильма по названию латиницей
+- [x] Поиск фильма с названием из набора букв разного регистра (негативная проверка)
+- [x] Поиск фильма с названием из символов (негативная проверка) 
+- [x] Проверка отсутствия ошибок в консоли
+- [x] Page title should have header text (disabled)
 
 ## :computer: Технологический стек
 
 <p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<img width="6%" title="IntelliJ IDEA" src="images/sprites/Intelij_IDEA.6aca1163.svg">
+<img width="6%" title="Java" src="images/sprites/Java.15d76882.svg">
+<img width="6%" title="JUnit5" src="images/sprites/JUnit5.a799eb2a.svg">
+<img width="6%" title="Selenide" src="images/sprites/Selenide.0170ac43.png">
+<img width="6%" title="Gradle" src="images/sprites/Gradle.22e74204.svg">
+<img width="6%" title="GitHub" src="images/sprites/Github.97faa3bc.svg">
+<img width="6%" title="Jenkins" src="images/sprites/Jenkins.e8031169.svg">
+<img width="6%" title="Selenoid" src="images/sprites/Selenoid.8de18e28.svg">
+<img width="6%" title="Allure Report" src="images/sprites/Allure_Report.52dae7a1.png">
+<img width="6%" title="Telegram" src="images/sprites/Telegram.06a4926c.svg">
 </p>
 
-```mermaid        
-    stateDiagram-v2
-        State1: START
-        State2: Java & IntelliJ IDEA
-        State3: Selenide & JUnit5
-        State4: Gradle
-        State5: GitHub
-        State6: Jenkins
-        State7: Selenoid
-        State8: Allure Report
-        State9: Telegram
-        State10: STOP
-        State1 --> State2
-        State2 --> State3
-        State3 --> State4
-        State4 --> State5
-        State5 --> State6
-        State6 --> State7
-        State7 --> State8
-        State8 --> State9
-        State9 --> State10
-        note right of State2 : Работа с кодом
-        note left of State3 : Фреймворки
-        note right of State4 : Сборка проекта
-        note left of State5 : Система контроля версий и хостинг проекта
-        note right of State6 : Параметризация и запуск сборки
-        note left of State7 : Контейнеризация
-        note right of State8 : Отчётность
-        note left of State9 : Уведомления
-```
 ## :technologist: Запуск тестов из терминала
 
 ### Локальный запуск тестов
 
 ```
-gradle clean test
+gradle clean searchpage
 ```
 
 ### Удаленный запуск тестов
 
 ```
 clean
-test
+searchpage
 -Dbrowser=${BROWSER}
--Dsize=${SIZE}
+-DbrowserVersion=${BROWSER_VERSION}
+-DbrowserSize=${BROWSER_SIZE}
+-Dremote=${REMOTE_URL}
 ```
 
 ### Параметры сборки
@@ -95,49 +70,48 @@ test
 >
 > <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (_по умолчанию - <code>1920x1080</code>_).
 >
-> <code>ENVIRONMENT</code> – версия окружения для отчёта в Telegram.
+> <code>BROWSER_VERSION</code> – версия вебдрайвера браузера (_по умолчанию - <code>99</code>_).
 >
-> <code>PROJECT_NAME</code> – имя проекта для отчёта в Telegram.
+> <code>REMOTE_URL</code> – адрес удалённого стенда для запуска браузера.
 
-## <img width="4%" title="Jenkins" src="images/logo/Jenkins.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/)
+## <img width="4%" title="Jenkins" src="images/sprites/Jenkins.e8031169.svg"> Главная страница сборки [Jenkins](https://jenkins.autotests.cloud/job/12-anikknik-homework13/)
 
 <p align="center">
   <img src="images/screenshots/Jenkins.PNG">
 </p>
 
-## <img width="4%" title="Allure Report" src="images/logo/Allure_Report.svg"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/012-SergeevSS90-unit13-Wildberries_tests/24/allure/)
+## <img width="4%" title="Allure Report" src="images/sprites/Allure_Report.52dae7a1.png"> Отчет о результатах тестирования в [Allure Report](https://jenkins.autotests.cloud/job/12-anikknik-homework13/allure/)
 
-### :pushpin: Главная страница Allure-отчета
-
-<p align="center">
-<img title="Allure Overview" src="images/screenshots/allure_overview.PNG">
-</p>
-
-### :pushpin: Страница с тестами
+### :pushpin: Стартовая страница Allure-отчета
 
 <p align="center">
-<img title="Allure Behaviors" src="images/screenshots/allure_behaviors.PNG">
+<img title="Allure Overview" src="images/screenshots/overview_allure.png">
 </p>
 
-### :pushpin: Основной дашборд
+### :pushpin: Вид тест-кейсов
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="images/screenshots/allure_overview_dashboard.PNG">
+<img title="Allure Behaviors" src="images/screenshots/behaviors_allure.png">
 </p>
 
-## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+### :pushpin: Графики тест-ранов
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/graphs_allure.png">
+</p>
+
+## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Репорт в Telegram с помощью бота
 
 > После завершения сборки бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом.
 <p align="center">
-<img title="Telegram Notifications" src="images/screenshots/telegram_notifications.PNG">
+<img title="Telegram Notifications" src="images/screenshots/report_telegram.png">
 </p>
 
 ## <img width="4%" title="Selenoid" src="images/logo/Selenoid.svg"> Пример запуска теста в Selenoid
 
 > К каждому тесту в отчете прилагается видео. Одно из таких видео представлено ниже.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/selenoid_video.gif">
+  <img title="Selenoid Video" src="images/video/test_video.mp4">
 </p>
 
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
+:black_heart: <a target="_blank" href="https://t.me/anikknik">t.me/anikknik</a>
