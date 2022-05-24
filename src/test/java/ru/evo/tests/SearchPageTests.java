@@ -95,7 +95,7 @@ public class SearchPageTests extends TestBase {
     @Test
     @DisplayName("Проверка заголовка страницы")
     void titleTest() {
-        step("Page title should have text 'Security check'", () -> {
+        step("Заголовок страницы содержит текст 'Security check'", () -> {
             String expectedTitle = "Security check"; // expected:"Расширенный поиск"
             String actualTitle = title();
 
