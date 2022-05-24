@@ -95,7 +95,7 @@ public class SearchPageTests extends TestBase {
     @Test
     @DisplayName("Проверка заголовка страницы")
     void titleTest() {
-        step("Заголовок страницы содержит текст 'Security check'", () -> {
+        step("Проверка, что заголовок страницы содержит текст 'Security check'", () -> {
             String expectedTitle = "Security check"; // expected:"Расширенный поиск"
             String actualTitle = title();
 
@@ -106,7 +106,7 @@ public class SearchPageTests extends TestBase {
     @Test
     @DisplayName("Проверка отсутствия ошибок в консоли")
     void consoleShouldNotHaveErrorsTest() {
-        step("Console logs should not contain text 'SEVERE'", () -> {
+        step("Проверка отсутствия в консоли ошибок 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
             String errorText = "SEVERE";
 
