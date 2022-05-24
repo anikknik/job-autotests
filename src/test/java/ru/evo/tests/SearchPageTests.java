@@ -91,9 +91,9 @@ public class SearchPageTests extends TestBase {
         );
     }
 
-    @Disabled("Example. Need rewrite")
+    @Disabled("Пример. Нужно переписать")
     @Test
-    @DisplayName("Page title should have header text")
+    @DisplayName("Проверка заголовка страницы")
     void titleTest() {
         step("Page title should have text 'Security check'", () -> {
             String expectedTitle = "Security check"; // expected:"Расширенный поиск"
