@@ -19,7 +19,7 @@
 ➠ [Пример запуска теста в Selenoid](#selenoid_video)
 ## <a name="global_func"></a>:globe_with_meridians: Покрытый функционал
 
-### UI
+### UI and Console tests
 
 :white_check_mark: Проверка успешного открытия страницы расширенного поиска
 
@@ -35,7 +35,7 @@
 
 :white_check_mark: Проверка отсутствия ошибок в консоли
 
-:ballot_box_with_check: Page title should have header text
+:ballot_box_with_check: Проверка заголовка страницы
 
 ## <a name="tech_stek"></a> :computer: Технологический стек
 
